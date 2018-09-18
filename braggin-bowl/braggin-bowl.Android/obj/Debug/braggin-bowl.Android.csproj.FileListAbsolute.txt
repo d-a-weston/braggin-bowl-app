@@ -1,2 +1,0 @@
-C:\development\iab330-braggin-bowl\braggin-bowl\braggin-bowl.Android\obj\Debug\braggin-bowl.Android.csprojAssemblyReference.cache
-C:\development\iab330-braggin-bowl\braggin-bowl\braggin-bowl.Android\obj\Debug\braggin-bowl.Android.csproj.CoreCompileInputs.cache
