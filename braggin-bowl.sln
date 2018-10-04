@@ -1,0 +1,15 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2042
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "braggin-bowl", "braggin-bowl\braggin-bowl\braggin-bowl.shproj", "{5057458B-13C9-430B-AE8C-0CF34BE01316}"
+EndProject
+Global
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2274EDCF-3862-4D83-BAB9-A9BB26DD1EAF}
+	EndGlobalSection
+EndGlobal
