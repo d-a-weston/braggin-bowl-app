@@ -3,11 +3,25 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:bragginBowl"
              x:Class="bragginBowl.Profile">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Profile!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
-    </ContentPage.Content>
+
+    <ActivityIndicator VerticalOptions="Center" HorizontalOptions="Center" x:Name="activity_indicator" Color="#4D7EE1" />
+    
+    <ListView x:Name="playerInfo" HasUnevenRows="true">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+                    <!-- Here we make a Horizontal orientation with the help of StackLayout-->
+                    <StackLayout Orientation="Horizontal" Margin="5" HeightRequest="90">
+                        <Image Source="{Binding photo}" WidthRequest="100" HeightRequest="200" Aspect="AspectFit" />
+                        <StackLayout VerticalOptions="Center">
+                            <Label Text="{Binding gamertag}" TextColor="#1C5AD8" />
+                            <Label Text="{Binding name}" TextColor="#1C5AD8" />
+                            <Label Text="{Binding tagline}" TextColor="#1C5AD8" />
+                        </StackLayout>
+                    </StackLayout>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+    
 </ContentPage>

@@ -56,3 +56,4 @@ C:\Users\jebus\Documents\iab330-braggin-bowl\bragginBowl\bragginBowl\bragginBowl
 C:\Users\jebus\Documents\iab330-braggin-bowl\bragginBowl\bragginBowl\bragginBowl.iOS\obj\iPhoneSimulator\Debug\bragginBowl.iOS.csproj.CopyComplete
 C:\Users\jebus\Documents\iab330-braggin-bowl\bragginBowl\bragginBowl\bragginBowl.iOS\obj\iPhoneSimulator\Debug\bragginBowl.iOS.exe
 C:\Users\jebus\Documents\iab330-braggin-bowl\bragginBowl\bragginBowl\bragginBowl.iOS\obj\iPhoneSimulator\Debug\bragginBowl.iOS.pdb
+C:\Users\jebus\Documents\iab330-braggin-bowl\bragginBowl\bragginBowl\bragginBowl.iOS\bin\iPhoneSimulator\Debug\Newtonsoft.Json.dll

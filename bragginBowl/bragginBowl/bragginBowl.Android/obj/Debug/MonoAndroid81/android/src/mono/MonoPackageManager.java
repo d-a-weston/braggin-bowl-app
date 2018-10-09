@@ -109,6 +109,7 @@ class MonoPackageManager_Resources {
 		"bragginBowl.Android.dll",
 		"bragginBowl.dll",
 		"FormsViewGroup.dll",
+		"Newtonsoft.Json.dll",
 		"Xamarin.Android.Arch.Core.Common.dll",
 		"Xamarin.Android.Arch.Lifecycle.Common.dll",
 		"Xamarin.Android.Arch.Lifecycle.Runtime.dll",

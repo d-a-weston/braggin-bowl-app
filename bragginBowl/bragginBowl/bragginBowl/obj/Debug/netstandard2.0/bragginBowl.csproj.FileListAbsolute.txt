@@ -7,9 +7,9 @@ C:\Users\jebus\Documents\iab330-braggin-bowl\bragginBowl\bragginBowl\bragginBowl
 C:\Users\jebus\Documents\iab330-braggin-bowl\bragginBowl\bragginBowl\bragginBowl\obj\Debug\netstandard2.0\bragginBowl.csproj.CoreCompileInputs.cache
 C:\Users\jebus\Documents\iab330-braggin-bowl\bragginBowl\bragginBowl\bragginBowl\obj\Debug\netstandard2.0\bragginBowl.AssemblyInfoInputs.cache
 C:\Users\jebus\Documents\iab330-braggin-bowl\bragginBowl\bragginBowl\bragginBowl\obj\Debug\netstandard2.0\bragginBowl.AssemblyInfo.cs
-C:\Users\jebus\Documents\iab330-braggin-bowl\bragginBowl\bragginBowl\bragginBowl\obj\Debug\netstandard2.0\XamlC.stamp
 C:\Users\jebus\Documents\iab330-braggin-bowl\bragginBowl\bragginBowl\bragginBowl\obj\Debug\netstandard2.0\bragginBowl.dll
 C:\Users\jebus\Documents\iab330-braggin-bowl\bragginBowl\bragginBowl\bragginBowl\obj\Debug\netstandard2.0\bragginBowl.pdb
 C:\Users\jebus\Documents\iab330-braggin-bowl\bragginBowl\bragginBowl\bragginBowl\obj\Debug\netstandard2.0\Profile.xaml.g.cs
 C:\Users\jebus\Documents\iab330-braggin-bowl\bragginBowl\bragginBowl\bragginBowl\obj\Debug\netstandard2.0\Tournament.xaml.g.cs
 C:\Users\jebus\Documents\iab330-braggin-bowl\bragginBowl\bragginBowl\bragginBowl\obj\Debug\netstandard2.0\MasterPage.xaml.g.cs
+C:\Users\jebus\Documents\iab330-braggin-bowl\bragginBowl\bragginBowl\bragginBowl\obj\Debug\netstandard2.0\XamlC.stamp
