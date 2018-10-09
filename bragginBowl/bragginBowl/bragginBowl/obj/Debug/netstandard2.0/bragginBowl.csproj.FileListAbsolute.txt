@@ -1,0 +1,15 @@
+C:\Users\jebus\Documents\iab330-braggin-bowl\bragginBowl\bragginBowl\bragginBowl\bin\Debug\netstandard2.0\bragginBowl.deps.json
+C:\Users\jebus\Documents\iab330-braggin-bowl\bragginBowl\bragginBowl\bragginBowl\bin\Debug\netstandard2.0\bragginBowl.dll
+C:\Users\jebus\Documents\iab330-braggin-bowl\bragginBowl\bragginBowl\bragginBowl\bin\Debug\netstandard2.0\bragginBowl.pdb
+C:\Users\jebus\Documents\iab330-braggin-bowl\bragginBowl\bragginBowl\bragginBowl\obj\Debug\netstandard2.0\bragginBowl.csprojAssemblyReference.cache
+C:\Users\jebus\Documents\iab330-braggin-bowl\bragginBowl\bragginBowl\bragginBowl\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\jebus\Documents\iab330-braggin-bowl\bragginBowl\bragginBowl\bragginBowl\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\jebus\Documents\iab330-braggin-bowl\bragginBowl\bragginBowl\bragginBowl\obj\Debug\netstandard2.0\bragginBowl.csproj.CoreCompileInputs.cache
+C:\Users\jebus\Documents\iab330-braggin-bowl\bragginBowl\bragginBowl\bragginBowl\obj\Debug\netstandard2.0\bragginBowl.AssemblyInfoInputs.cache
+C:\Users\jebus\Documents\iab330-braggin-bowl\bragginBowl\bragginBowl\bragginBowl\obj\Debug\netstandard2.0\bragginBowl.AssemblyInfo.cs
+C:\Users\jebus\Documents\iab330-braggin-bowl\bragginBowl\bragginBowl\bragginBowl\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\jebus\Documents\iab330-braggin-bowl\bragginBowl\bragginBowl\bragginBowl\obj\Debug\netstandard2.0\bragginBowl.dll
+C:\Users\jebus\Documents\iab330-braggin-bowl\bragginBowl\bragginBowl\bragginBowl\obj\Debug\netstandard2.0\bragginBowl.pdb
+C:\Users\jebus\Documents\iab330-braggin-bowl\bragginBowl\bragginBowl\bragginBowl\obj\Debug\netstandard2.0\Profile.xaml.g.cs
+C:\Users\jebus\Documents\iab330-braggin-bowl\bragginBowl\bragginBowl\bragginBowl\obj\Debug\netstandard2.0\Tournament.xaml.g.cs
+C:\Users\jebus\Documents\iab330-braggin-bowl\bragginBowl\bragginBowl\bragginBowl\obj\Debug\netstandard2.0\MasterPage.xaml.g.cs
