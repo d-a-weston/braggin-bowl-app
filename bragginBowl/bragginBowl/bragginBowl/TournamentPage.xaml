@@ -2,21 +2,25 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:bragginBowl"
-             x:Class="bragginBowl.Profile">
+             x:Class="bragginBowl.TournamentPage">
 
     <ActivityIndicator VerticalOptions="Center" HorizontalOptions="Center" x:Name="activity_indicator" Color="#4D7EE1" />
-    
-    <ListView x:Name="playerInfo" HasUnevenRows="true">
+
+    <ListView x:Name="tournamentInfo" HasUnevenRows="true">
         <ListView.ItemTemplate>
             <DataTemplate>
                 <ViewCell>
                     <!-- Here we make a Horizontal orientation with the help of StackLayout-->
                     <StackLayout Orientation="Horizontal" Margin="5" HeightRequest="90">
-                        <Image Source="{Binding photo}" WidthRequest="100" HeightRequest="200" Aspect="AspectFit" />
                         <StackLayout VerticalOptions="Center">
-                            <Label Text="{Binding gamertag}" TextColor="#1C5AD8" />
-                            <Label Text="{Binding name}" TextColor="#1C5AD8" />
-                            <Label Text="{Binding tagline}" TextColor="#1C5AD8" />
+                            <Label Text="{Binding tournament_date}" TextColor="#1C5AD8" />
+                            <Label Text="{Binding game}" TextColor="#1C5AD8" />
+                            <Label Text="{Binding modifiers}" TextColor="#1C5AD8" />
+                        </StackLayout>
+                        <StackLayout VerticalOptions="Center">
+                            <Label Text="{Binding team_size}" TextColor="#1C5AD8" />
+                            <Label Text="{Binding tournament_type}" TextColor="#1C5AD8" />
+                            <Label Text="{Binding legal_tournament}" TextColor="#1C5AD8" />
                         </StackLayout>
                     </StackLayout>
                 </ViewCell>

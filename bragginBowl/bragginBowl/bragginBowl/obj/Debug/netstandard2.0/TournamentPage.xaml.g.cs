@@ -8,25 +8,25 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("bragginBowl.Profile.xaml", "Profile.xaml", typeof(global::bragginBowl.Profile))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("bragginBowl.TournamentPage.xaml", "TournamentPage.xaml", typeof(global::bragginBowl.TournamentPage))]
 
 namespace bragginBowl {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Profile.xaml")]
-    public partial class Profile : global::Xamarin.Forms.ContentPage {
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("TournamentPage.xaml")]
+    public partial class TournamentPage : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private global::Xamarin.Forms.ActivityIndicator activity_indicator;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
-        private global::Xamarin.Forms.ListView playerInfo;
+        private global::Xamarin.Forms.ListView tournamentInfo;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
-            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(Profile));
+            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(TournamentPage));
             activity_indicator = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.ActivityIndicator>(this, "activity_indicator");
-            playerInfo = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.ListView>(this, "playerInfo");
+            tournamentInfo = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.ListView>(this, "tournamentInfo");
         }
     }
 }

@@ -10,8 +10,8 @@
             <ListView x:Name="listView" x:FieldModifier="public">
                 <ListView.ItemsSource>
                     <x:Array Type="{x:Type local:MasterPageItem}">
-                        <local:MasterPageItem Title="Profile" TargetType="{x:Type local:Profile}" />
-                        <local:MasterPageItem Title="Tournament" TargetType="{x:Type local:Tournament}" />
+                        <local:MasterPageItem Title="Players" TargetType="{x:Type local:PlayersPage}" />
+                        <local:MasterPageItem Title="Tournaments" TargetType="{x:Type local:TournamentPage}" />
                     </x:Array>
                 </ListView.ItemsSource>
                 <ListView.ItemTemplate>

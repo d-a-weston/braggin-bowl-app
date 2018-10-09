@@ -14,10 +14,10 @@ using Xamarin.Forms.Xaml;
 namespace bragginBowl
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class Profile : ContentPage
+	public partial class PlayersPage : ContentPage
 	{
 
-		public Profile ()
+		public PlayersPage ()
 		{
 			InitializeComponent ();
             GetPlayers();
