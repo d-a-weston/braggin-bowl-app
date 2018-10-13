@@ -39,14 +39,8 @@ namespace bragginBowl
 
                 playerInfo.ItemsSource = players;
 
-                int i = players.Count;
-                if (i > 0)
-                {
-                    activity_indicator.IsRunning = false;
-                }
-
-                i = (players.Count * 90);
-                activity_indicator.HeightRequest = i;
+                activity_indicator.IsRunning = false;
+                activity_indicator.IsVisible = false;
             }
             catch (HttpRequestException e)
             {

@@ -13,3 +13,4 @@ C:\Users\jebus\Documents\iab330-braggin-bowl\bragginBowl\bragginBowl\bragginBowl
 C:\Users\jebus\Documents\iab330-braggin-bowl\bragginBowl\bragginBowl\bragginBowl\obj\Debug\netstandard2.0\XamlC.stamp
 C:\Users\jebus\Documents\iab330-braggin-bowl\bragginBowl\bragginBowl\bragginBowl\obj\Debug\netstandard2.0\TournamentPage.xaml.g.cs
 C:\Users\jebus\Documents\iab330-braggin-bowl\bragginBowl\bragginBowl\bragginBowl\obj\Debug\netstandard2.0\PlayersPage.xaml.g.cs
+C:\Users\jebus\Documents\iab330-braggin-bowl\bragginBowl\bragginBowl\bragginBowl\obj\Debug\netstandard2.0\ProfilePage.xaml.g.cs
