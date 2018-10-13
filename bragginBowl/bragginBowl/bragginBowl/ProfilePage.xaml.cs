@@ -16,13 +16,19 @@ namespace bragginBowl
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class ProfilePage : ContentPage
 	{
-		public ProfilePage ()
+        public ProfilePage()
+        {
+            InitializeComponent();
+            GetPlayer("Salty");
+        }
+
+        public ProfilePage (string gamertag)
 		{
 			InitializeComponent ();
-            GetPlayer();
+            GetPlayer(gamertag);
 		}
 
-        public async void GetPlayer()
+        public async void GetPlayer(string gamertag)
         {
             HttpClient client = new HttpClient();
 
@@ -30,11 +36,11 @@ namespace bragginBowl
             {
                 activity_indicator.IsRunning = true;
 
-                string playerUri = "http://bearfoot.design:8080/api/player/1";
+                string playerUri = "http://bearfoot.design:8080/api/player/tag/" + gamertag;
                 string playerResponseBody = await client.GetStringAsync(playerUri);
 
-                var plyr = JsonConvert.DeserializeObject<List<Player>>(playerResponseBody);
-                Player Player = plyr[0];
+                var plyr = JsonConvert.DeserializeObject<Player>(playerResponseBody);
+                Player Player = plyr;
 
                 if (Player.photo != null)
                 {
@@ -45,7 +51,7 @@ namespace bragginBowl
                 playerName.Text = Player.name;
                 playerTagline.Text = Player.tagline;
 
-                string attendingUri = "http://bearfoot.design:8080/api/player/1/attending";
+                string attendingUri = "http://bearfoot.design:8080/api/player/" + Player.playerID + "/attending";
                 string attendingResponseBody = await client.GetStringAsync(attendingUri);
 
                 var atnd = JsonConvert.DeserializeObject<List<Plays_In>>(attendingResponseBody);

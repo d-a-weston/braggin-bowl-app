@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:bragginBowl"
+             x:Class="bragginBowl.PlayerCreationPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout>
+                <Entry x:Name="GamertagEntry" Placeholder="Gamertag"/>
+                <Entry x:Name="NameEntry" Placeholder="Name"/>
+                <Entry x:Name="TaglineEntry" Placeholder="What's your tagline?"/>
+                <Entry x:Name="PhotoEntry" Placeholder="Photo URL"/>
+            </StackLayout>
+            <StackLayout>
+                <Entry x:Name="Password1" IsPassword="true" Placeholder="Password"/>
+                <Entry x:Name="Password2" IsPassword="true" Placeholder="Confirm"/>
+                <Button Text="Create Account" Clicked="OnButtonClicked"/>
+            </StackLayout>
+            <ActivityIndicator VerticalOptions="Center" HorizontalOptions="Center" x:Name="activity_indicator" Color="#4D7EE1" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -11,6 +11,7 @@
                 <ListView.ItemsSource>
                     <x:Array Type="{x:Type local:MasterPageItem}">
                         <local:MasterPageItem Title="Profile" TargetType="{x:Type local:ProfilePage}" />
+                        <local:MasterPageItem Title="Player Creation" TargetType="{x:Type local:PlayerCreationPage}" />
                         <local:MasterPageItem Title="Players" TargetType="{x:Type local:PlayersPage}" />
                         <local:MasterPageItem Title="Tournaments" TargetType="{x:Type local:TournamentPage}" />
                     </x:Array>
