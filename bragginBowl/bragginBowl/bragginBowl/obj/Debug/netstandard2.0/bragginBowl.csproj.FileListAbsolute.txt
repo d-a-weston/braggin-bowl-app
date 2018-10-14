@@ -33,3 +33,4 @@ D:\IAB330\iab330-braggin-bowl\bragginBowl\bragginBowl\bragginBowl\obj\Debug\nets
 D:\IAB330\iab330-braggin-bowl\bragginBowl\bragginBowl\bragginBowl\obj\Debug\netstandard2.0\bragginBowl.dll
 D:\IAB330\iab330-braggin-bowl\bragginBowl\bragginBowl\bragginBowl\obj\Debug\netstandard2.0\bragginBowl.pdb
 D:\IAB330\iab330-braggin-bowl\bragginBowl\bragginBowl\bragginBowl\obj\Debug\netstandard2.0\bragginBowl.csprojAssemblyReference.cache
+C:\Users\jebus\Documents\iab330-braggin-bowl\bragginBowl\bragginBowl\bragginBowl\obj\Debug\netstandard2.0\TournamentCreationPage.xaml.g.cs

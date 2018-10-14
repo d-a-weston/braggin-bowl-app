@@ -29,8 +29,6 @@ namespace bragginBowl
                 int n;
                 if (!int.TryParse(TeamSize.Text, out n) && (TeamSize.Text != null && TeamSize.Text != "")) {
                     await DisplayAlert("Alert", "Team Size must be numeric", "OK");
-                }else if(!int.TryParse(TeamNum.Text, out n) && (TeamNum.Text != null && TeamNum.Text != "")) {
-                    await DisplayAlert("Alert", "Number of Teams must be numeric", "OK");
                 }else if(TournamentTypePicker.SelectedItem == null) {
                     await DisplayAlert("Alert", "Tournament Type is required", "OK");
                 }else if(Game.Text == null || Game.Text =="") {
@@ -39,9 +37,7 @@ namespace bragginBowl
                     await DisplayAlert("Alert", "Date is required", "OK");
                 }else if(TeamSize.Text == null || TeamSize.Text == "") {
                     TeamSize.Text = "1";
-                }else if(TeamNum.Text == null || TeamNum.Text == "") {
-                    await DisplayAlert("Alert", "Number of Teams is required", "OK");
-                } else {
+                }else {
                     if(TournamentTypePicker.SelectedIndex == 0) {
                         tournament.tournament_type = "SWISS";
                     } else {
@@ -56,7 +52,7 @@ namespace bragginBowl
                     tournament.modifiers = Modifiers.Text;
                     tournament.tournament_date = Date.Date;
                     tournament.team_size = Int32.Parse(TeamSize.Text);
-                    tournament.team_num = Int32.Parse(TeamNum.Text);
+                    tournament.team_num = 0;
 
 
                 }

@@ -14,7 +14,7 @@
                         <local:MasterPageItem Title="Player Creation" TargetType="{x:Type local:PlayerCreationPage}" />
                         <local:MasterPageItem Title="Players" TargetType="{x:Type local:PlayersPage}" />
                         <local:MasterPageItem Title="Tournaments" TargetType="{x:Type local:TournamentPage}" />
-                        <local:MasterPageItem Title="Tournament Creation" TargetType="{x:Type local:TournamentCreationPage}" />
+                        <local:MasterPageItem Title="Create Tournament" TargetType="{x:Type local:TournamentCreationPage}" />
                     </x:Array>
                 </ListView.ItemsSource>
                 <ListView.ItemTemplate>

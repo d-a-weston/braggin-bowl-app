@@ -33,8 +33,6 @@
                 <DatePicker x:Name="Date" FontSize="12"/>
                 <Label Text="Team Size:"/>
                 <Entry x:Name="TeamSize" MaxLength="10" Keyboard="Numeric" FontSize="12"/>
-                <Label Text="Number of Teams:"/>
-                <Entry x:Name="TeamNum" MaxLength="10" Keyboard="Numeric" FontSize="12"/>
                 <Button Text="Create Tournament" Clicked="OnButtonClicked"/>
                 <ActivityIndicator VerticalOptions="Center" HorizontalOptions="Center" x:Name="activity_indicator" Color="#4D7EE1" />
             </StackLayout>
