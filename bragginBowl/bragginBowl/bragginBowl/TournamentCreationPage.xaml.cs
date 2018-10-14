@@ -54,7 +54,6 @@ namespace bragginBowl
                     tournament.team_size = Int32.Parse(TeamSize.Text);
                     tournament.team_num = 0;
 
-
                 }
 
                 var data = JsonConvert.SerializeObject(tournament);
