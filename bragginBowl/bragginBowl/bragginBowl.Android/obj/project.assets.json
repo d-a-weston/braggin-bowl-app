@@ -818,20 +818,20 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\jebus\\.nuget\\packages\\": {}
+    "C:\\Users\\Jasper\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jebus\\Documents\\iab330-braggin-bowl\\bragginBowl\\bragginBowl\\bragginBowl.Android\\bragginBowl.Android.csproj",
+      "projectUniqueName": "D:\\IAB330\\iab330-braggin-bowl\\bragginBowl\\bragginBowl\\bragginBowl.Android\\bragginBowl.Android.csproj",
       "projectName": "bragginBowl.Android",
-      "projectPath": "C:\\Users\\jebus\\Documents\\iab330-braggin-bowl\\bragginBowl\\bragginBowl\\bragginBowl.Android\\bragginBowl.Android.csproj",
-      "packagesPath": "C:\\Users\\jebus\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jebus\\Documents\\iab330-braggin-bowl\\bragginBowl\\bragginBowl\\bragginBowl.Android\\obj\\",
+      "projectPath": "D:\\IAB330\\iab330-braggin-bowl\\bragginBowl\\bragginBowl\\bragginBowl.Android\\bragginBowl.Android.csproj",
+      "packagesPath": "C:\\Users\\Jasper\\.nuget\\packages\\",
+      "outputPath": "D:\\IAB330\\iab330-braggin-bowl\\bragginBowl\\bragginBowl\\bragginBowl.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
-        "C:\\Users\\jebus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Jasper\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -844,8 +844,8 @@
       "frameworks": {
         "monoandroid81": {
           "projectReferences": {
-            "C:\\Users\\jebus\\Documents\\iab330-braggin-bowl\\bragginBowl\\bragginBowl\\bragginBowl\\bragginBowl.csproj": {
-              "projectPath": "C:\\Users\\jebus\\Documents\\iab330-braggin-bowl\\bragginBowl\\bragginBowl\\bragginBowl\\bragginBowl.csproj"
+            "D:\\IAB330\\iab330-braggin-bowl\\bragginBowl\\bragginBowl\\bragginBowl\\bragginBowl.csproj": {
+              "projectPath": "D:\\IAB330\\iab330-braggin-bowl\\bragginBowl\\bragginBowl\\bragginBowl\\bragginBowl.csproj"
             }
           }
         }

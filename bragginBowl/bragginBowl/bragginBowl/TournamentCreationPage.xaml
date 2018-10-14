@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:bragginBowl"
+             x:Class="bragginBowl.TournamentCreationPage">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Label Text="Create Tournament" FontSize="20"/>
+                <Label Text="Tournament Type:"/>
+                <Picker x:Name="TournamentTypePicker" FontSize="12">
+                    <Picker.ItemsSource>
+                        <x:Array Type="{x:Type x:String}">
+                            <x:String>Swiss</x:String>
+                            <x:String>Double Elimination</x:String>
+                        </x:Array>
+                    </Picker.ItemsSource>
+                </Picker>
+                <Label Text="Legal Tournament?"/>
+                <Picker x:Name="LegalTournamentPicker" FontSize="12">
+                    <Picker.ItemsSource>
+                        <x:Array Type="{x:Type x:String}">
+                            <x:String>Yes</x:String>
+                            <x:String>No</x:String>
+                        </x:Array>
+                    </Picker.ItemsSource>
+                </Picker>
+                <Label Text="Game:"/>
+                <Entry x:Name="Game" MaxLength="45" FontSize="12"/>
+                <Label Text="Modifiers:"/>
+                <Editor x:Name="Modifiers" MaxLength="256" FontSize="12"/>
+                <Label Text="Date:"/>
+                <DatePicker x:Name="Date" FontSize="12"/>
+                <Label Text="Team Size:"/>
+                <Entry x:Name="TeamSize" MaxLength="10" Keyboard="Numeric" FontSize="12"/>
+                <Label Text="Number of Teams:"/>
+                <Entry x:Name="TeamNum" MaxLength="10" Keyboard="Numeric" FontSize="12"/>
+                <Button Text="Create Tournament" Clicked="OnButtonClicked"/>
+                <ActivityIndicator VerticalOptions="Center" HorizontalOptions="Center" x:Name="activity_indicator" Color="#4D7EE1" />
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
