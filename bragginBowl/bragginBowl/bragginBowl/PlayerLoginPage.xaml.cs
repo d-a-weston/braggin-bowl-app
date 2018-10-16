@@ -21,7 +21,7 @@ namespace bragginBowl
 			InitializeComponent ();
 		}
 
-        public async void OnButtonClicked()
+        public async void Login()
         {
             HttpClient client = new HttpClient();
 
@@ -51,7 +51,9 @@ namespace bragginBowl
                     else
                     {
                         Player player = JsonConvert.DeserializeObject<Player>(responseBody);
-                        await this.Navigation.PushAsync(new ProfilePage(player.gamertag));
+                        Application.Current.Properties["Gamertag"] = player.gamertag;
+                        await this.Navigation.PushAsync(new ProfilePage());
+                        Navigation.RemovePage(this);
                     }
                 }
             }
@@ -62,6 +64,11 @@ namespace bragginBowl
             }
 
             client.Dispose();
+        }
+
+        public async void CreateAccount()
+        {
+            await this.Navigation.PushAsync(new PlayerCreationPage());
         }
     }
 }

@@ -21,7 +21,7 @@ namespace bragginBowl
 		{
 			InitializeComponent ();
             GetPlayers();
-		}
+        }
 
         public async void GetPlayers()
         {
@@ -38,6 +38,7 @@ namespace bragginBowl
                 ObservableCollection<Player> players = new ObservableCollection<Player>(plyr);
 
                 playerInfo.ItemsSource = players;
+                playerInfo.ItemSelected += OnItemSelected;
 
                 activity_indicator.IsRunning = false;
                 activity_indicator.IsVisible = false;
@@ -50,5 +51,11 @@ namespace bragginBowl
 
             client.Dispose();
         }
-	}
+
+        public async void OnItemSelected (object sender, SelectedItemChangedEventArgs e)
+        {
+            var item = (Player)e.SelectedItem;
+            await this.Navigation.PushAsync(new ProfilePage(item.gamertag));
+        }
+    }
 }

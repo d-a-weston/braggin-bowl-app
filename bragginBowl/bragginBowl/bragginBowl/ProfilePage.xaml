@@ -14,6 +14,9 @@
                     <Label x:Name="playerName" TextColor="#1C5AD8" />
                     <Label x:Name="playerTagline" TextColor="#1C5AD8" />
                 </StackLayout>
+                <StackLayout>
+                    <Button Text="Logout" Clicked="Logout" x:Name="LogoutButton"/>
+                </StackLayout>
             </StackLayout>
             <ListView x:Name="attendingInfo" HasUnevenRows="true">
                 <ListView.ItemTemplate>

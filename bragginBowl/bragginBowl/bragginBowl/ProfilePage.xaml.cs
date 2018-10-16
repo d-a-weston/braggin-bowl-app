@@ -19,13 +19,14 @@ namespace bragginBowl
         public ProfilePage()
         {
             InitializeComponent();
-            GetPlayer("Salty");
+            GetPlayer(Application.Current.Properties["Gamertag"] as string);
         }
 
         public ProfilePage (string gamertag)
 		{
 			InitializeComponent ();
             GetPlayer(gamertag);
+            LogoutButton.IsVisible = false;
 		}
 
         public async void GetPlayer(string gamertag)
@@ -69,6 +70,13 @@ namespace bragginBowl
             }
 
             client.Dispose();
+        }
+
+        public async void Logout()
+        {
+            Application.Current.Properties.Remove("Gamertag");
+            await this.Navigation.PushAsync(new PlayerLoginPage());
+            Navigation.RemovePage(this);
         }
 	}
 }

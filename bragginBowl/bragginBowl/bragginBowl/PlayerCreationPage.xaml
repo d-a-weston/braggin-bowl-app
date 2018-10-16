@@ -6,7 +6,7 @@
     <ContentPage.Content>
         <StackLayout>
             <StackLayout>
-                <Entry x:Name="GamertagEntry" Placeholder="Gamertag"/>
+                <Entry x:Name="GamertagEntry" Placeholder="Gamertag" Text=""/>
                 <Entry x:Name="NameEntry" Placeholder="Name"/>
                 <Entry x:Name="TaglineEntry" Placeholder="What's your tagline?"/>
                 <Entry x:Name="PhotoEntry" Placeholder="Photo URL"/>
