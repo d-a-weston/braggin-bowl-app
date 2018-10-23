@@ -55,6 +55,9 @@ namespace bragginBowl
         public async void ViewLeaderboard() {
             await this.Navigation.PushAsync(new LeaderboardPage());
         }
+        public async void ViewRound() {
+            await this.Navigation.PushAsync(new RoundPage());
+        }
     }
 
 }
