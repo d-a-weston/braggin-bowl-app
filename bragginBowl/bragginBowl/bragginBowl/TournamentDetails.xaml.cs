@@ -51,6 +51,10 @@ namespace bragginBowl
             client.Dispose();
 
         }
+
+        public async void ViewLeaderboard() {
+            await this.Navigation.PushAsync(new LeaderboardPage());
+        }
     }
 
 }

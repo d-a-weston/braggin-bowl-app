@@ -12,16 +12,17 @@
                         <ViewCell>
                             <!-- Here we make a Horizontal orientation with the help of StackLayout-->
                           
-                                <StackLayout VerticalOptions="Center">
-                                    <Label Text="{Binding tournament_date}" TextColor="#1C5AD8" />
-                                    <Label Text="{Binding tournamentID}" TextColor="#1C5AD8" />
-                                    <Label Text="{Binding game}" TextColor="#1C5AD8" />
-                                    <Label Text="{Binding tournament_type}" TextColor="#1C5AD8" />
-                                    <Label Text="{Binding legal_tournament}" TextColor="#1C5AD8" />
-                                    <Label Text="{Binding team_num}" TextColor="#1C5AD8" />
-                                    <Label Text="{Binding team_size}" TextColor="#1C5AD8" />
-                                    <Label Text="{Binding modifiers}" TextColor="#1C5AD8" />
-                                    <Label Text="{Binding current_round}" TextColor="#1C5AD8" />
+                            <StackLayout VerticalOptions="Center">
+                                <Label Text="{Binding tournament_date}" TextColor="#1C5AD8" />
+                                <Label Text="{Binding tournamentID}" TextColor="#1C5AD8" />
+                                <Label Text="{Binding game}" TextColor="#1C5AD8" />
+                                <Label Text="{Binding tournament_type}" TextColor="#1C5AD8" />
+                                <Label Text="{Binding legal_tournament}" TextColor="#1C5AD8" />
+                                <Label Text="{Binding team_num}" TextColor="#1C5AD8" />
+                                <Label Text="{Binding team_size}" TextColor="#1C5AD8" />
+                                <Label Text="{Binding modifiers}" TextColor="#1C5AD8" />
+                                <Label Text="{Binding current_round}" TextColor="#1C5AD8" />
+                                <Button Text="Leaderboard" Clicked="ViewLeaderboard" TextColor="#1C5AD8" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
                             </StackLayout>
                          
                         </ViewCell>
