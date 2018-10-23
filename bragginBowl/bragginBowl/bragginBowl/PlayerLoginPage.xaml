@@ -2,12 +2,16 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="bragginBowl.PlayerLoginPage">
+    
     <ContentPage.Content>
         <StackLayout>
-            <Entry x:Name="GamertagEntry" Placeholder="Gamertag" Text=""/>
-            <Entry x:Name="PasswordEntry" IsPassword="true" Placeholder="Password" Text=""/>
+            <Label Text="Welcome to Braggin' Bowl" HorizontalTextAlignment="Center" FontSize="Large"/>
+            <Label Text="   " />
+            <Entry x:Name="GamertagEntry" Placeholder="Enter your Gamertag" Text=""/>
+            <Entry x:Name="PasswordEntry" IsPassword="true" Placeholder="Enter your Password" Text=""/>
             <Button Text="Login" Clicked="Login"/>
-            <Label Text="Or"/>
+            <Label Text="    " />
+            <Label Text="Don't have an account  with us?" HorizontalTextAlignment="Center"/>
             <Button Text="Create New Account" Clicked="CreateAccount" />
         </StackLayout>
     </ContentPage.Content>
