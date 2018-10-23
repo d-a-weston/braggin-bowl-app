@@ -7,15 +7,27 @@
     <ContentPage.Content>
         <StackLayout>
             <ActivityIndicator VerticalOptions="Center" HorizontalOptions="Center" x:Name="activity_indicator" Color="#4D7EE1" />
-            <StackLayout Orientation="Horizontal" Margin="5" HeightRequest="90">
+            <StackLayout Orientation="Horizontal" Margin="5" HeightRequest="150">
                 <Image x:Name="playerPhoto" WidthRequest="100" HeightRequest="200" Aspect="AspectFit" />
                 <StackLayout VerticalOptions="Center">
-                    <Label x:Name="playerGamertag" TextColor="#1C5AD8" />
-                    <Label x:Name="playerName" TextColor="#1C5AD8" />
-                    <Label x:Name="playerTagline" TextColor="#1C5AD8" />
+                    <Label x:Name="playerGamertag" TextColor="Default" 
+                                           HorizontalTextAlignment="Center"
+                                           FontSize="Large"
+                                           FontAttributes="Bold" />
+                    <Label x:Name="playerName" TextColor="Default" 
+                                           HorizontalTextAlignment="Center"
+                                           FontSize="Medium"
+                                           FontAttributes="Bold" />
+                    <Label x:Name="playerTagline" TextColor="Default" 
+                                           HorizontalTextAlignment="Center"
+                                           FontSize="Small"
+                                           FontAttributes="Italic"/>
+
+                    <Label Text="  " />
+                    <Button Text="Logout" Clicked="Logout" x:Name="LogoutButton"/>
                 </StackLayout>
                 <StackLayout>
-                    <Button Text="Logout" Clicked="Logout" x:Name="LogoutButton"/>
+                    
                 </StackLayout>
             </StackLayout>
             <ListView x:Name="attendingInfo" HasUnevenRows="true">
@@ -24,6 +36,7 @@
                         <ViewCell>
                             <StackLayout Orientation="Horizontal" Margin="5" HeightRequest="90">
                                 <StackLayout VerticalOptions="Center">
+                                    
                                     <Label Text="{Binding tournament_date}" TextColor="#1C5AD8" />
                                     <Label Text="{Binding game}" TextColor="#1C5AD8" />
                                 </StackLayout>
