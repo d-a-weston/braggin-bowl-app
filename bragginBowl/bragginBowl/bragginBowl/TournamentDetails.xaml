@@ -1,8 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:bragginBowl"
-             x:Class="bragginBowl.TournamentPage">
+             x:Class="bragginBowl.TournamentDetails">
 
     <ContentPage.Content>
         <StackLayout>
@@ -12,24 +11,24 @@
                     <DataTemplate>
                         <ViewCell>
                             <!-- Here we make a Horizontal orientation with the help of StackLayout-->
-                            <StackLayout Orientation="Horizontal" Margin="5" HeightRequest="130">
+                          
                                 <StackLayout VerticalOptions="Center">
                                     <Label Text="{Binding tournament_date}" TextColor="#1C5AD8" />
+                                    <Label Text="{Binding tournamentID}" TextColor="#1C5AD8" />
                                     <Label Text="{Binding game}" TextColor="#1C5AD8" />
-                                    <Label Text="{Binding modifiers}" TextColor="#1C5AD8" />
-                                </StackLayout>
-                                <StackLayout VerticalOptions="Center">
-                                    <Label Text="{Binding team_size}" TextColor="#1C5AD8" />
                                     <Label Text="{Binding tournament_type}" TextColor="#1C5AD8" />
                                     <Label Text="{Binding legal_tournament}" TextColor="#1C5AD8" />
-                                    <Button Text="View More" Clicked="ViewMore" TextColor="#1C5AD8" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
-                                </StackLayout>
+                                    <Label Text="{Binding team_num}" TextColor="#1C5AD8" />
+                                    <Label Text="{Binding team_size}" TextColor="#1C5AD8" />
+                                    <Label Text="{Binding modifiers}" TextColor="#1C5AD8" />
+                                    <Label Text="{Binding current_round}" TextColor="#1C5AD8" />
                             </StackLayout>
+                         
                         </ViewCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
         </StackLayout>
     </ContentPage.Content>
-    
+
 </ContentPage>

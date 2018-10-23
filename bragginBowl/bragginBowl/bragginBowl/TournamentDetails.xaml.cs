@@ -14,13 +14,14 @@ using Xamarin.Forms.Xaml;
 namespace bragginBowl
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class TournamentPage : ContentPage
+	public partial class TournamentDetails : ContentPage
 	{
-		public TournamentPage ()
+		public TournamentDetails ()
 		{
-			InitializeComponent();
+			InitializeComponent ();
             GetTournaments();
-		}
+
+        }
 
         public async void GetTournaments()
         {
@@ -30,7 +31,7 @@ namespace bragginBowl
             {
                 activity_indicator.IsRunning = true;
 
-                string uri = "http://bearfoot.design:8080/api/tournament/";
+                string uri = "http://bearfoot.design:8080/api/tournament/1";
                 string responseBody = await client.GetStringAsync(uri);
 
                 var trn = JsonConvert.DeserializeObject<List<Tournament>>(responseBody);
@@ -48,12 +49,8 @@ namespace bragginBowl
             }
 
             client.Dispose();
-            
-        }
 
-        public async void ViewMore()
-        {
-            await this.Navigation.PushAsync(new TournamentDetails());
         }
     }
+
 }
