@@ -37,6 +37,9 @@ namespace bragginBowl
                 var plyr = JsonConvert.DeserializeObject<List<Player>>(responseBody);
                 ObservableCollection<Player> players = new ObservableCollection<Player>(plyr);
 
+                var image = new Image { Source = "profilepicture.png" };
+
+
                 playerInfo.ItemsSource = players;
                 playerInfo.ItemSelected += OnItemSelected;
 

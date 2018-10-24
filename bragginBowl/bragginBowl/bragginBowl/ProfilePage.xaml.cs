@@ -43,11 +43,8 @@ namespace bragginBowl
                 var plyr = JsonConvert.DeserializeObject<Player>(playerResponseBody);
                 Player Player = plyr;
 
-                if (Player.photo != null)
-                {
-                    playerPhoto.Source = Player.photo.ToString();
-                }
-                
+                var image = new Image { Source = "profilepicture.png" };
+
                 playerGamertag.Text = Player.gamertag;
                 playerName.Text = Player.name;
                 playerTagline.Text = Player.tagline;

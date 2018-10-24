@@ -7,9 +7,12 @@
     <ContentPage.Content>
         <StackLayout>
             <ActivityIndicator VerticalOptions="Center" HorizontalOptions="Center" x:Name="activity_indicator" Color="#4D7EE1" />
-            <StackLayout Orientation="Horizontal" Margin="5" HeightRequest="150">
-                <Image x:Name="playerPhoto" WidthRequest="100" HeightRequest="200" Aspect="AspectFit" />
+            <StackLayout Orientation="Vertical" Margin="5" HeightRequest="600">
+
                 <StackLayout VerticalOptions="Center">
+                    <Image Source="profilepicture.png" 
+                       HeightRequest="100"
+                       WidthRequest="100"/>
                     <Label x:Name="playerGamertag" TextColor="Default" 
                                            HorizontalTextAlignment="Center"
                                            FontSize="Large"
@@ -24,6 +27,33 @@
                                            FontAttributes="Italic"/>
 
                     <Label Text="  " />
+                                     
+                    <Label Text="Win/Loss Ratio:    0.75  " 
+                                           HorizontalTextAlignment="Start"
+                                           FontSize="Medium"
+                                           FontAttributes="None"/>
+                    <Label Text="Match History:  " 
+                                           HorizontalTextAlignment="Start"
+                                           FontSize="Medium"
+                                           FontAttributes="None"/>
+                    <Label Text="Mario Kart         Win            16/08/18"
+                                           HorizontalTextAlignment="Start"
+                                           FontSize="Small"
+                                           FontAttributes="None"/>
+                    <Label Text="Mario Kart         Win            08/08/18"
+                                           HorizontalTextAlignment="Start"
+                                           FontSize="Small"
+                                           FontAttributes="None"/>
+                    <Label Text="Mario Kart         Win            23/07/18"
+                                           HorizontalTextAlignment="Start"
+                                           FontSize="Small"
+                                           FontAttributes="None"/>
+                    <Label Text="Mario Kart         Loss           03/07/18"
+                                           HorizontalTextAlignment="Start"
+                                           FontSize="Small"
+                                           FontAttributes="None"/>
+
+
                     <Button Text="Logout" Clicked="Logout" x:Name="LogoutButton"/>
                 </StackLayout>
                 <StackLayout>

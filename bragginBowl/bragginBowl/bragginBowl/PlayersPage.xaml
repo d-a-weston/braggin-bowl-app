@@ -13,9 +13,10 @@
                         <ViewCell>
                           <!-- Here we make a Horizontal orientation with the help of StackLayout-->
                             <StackLayout Orientation="Horizontal" Margin="5" HeightRequest="90">
-                                <Image Source="{Binding photo}" WidthRequest="100" HeightRequest="200" Aspect="AspectFit" />
-                                    
-                                    <StackLayout VerticalOptions="Center">
+                                <Image Source="profilepicture.png" 
+                                           HeightRequest="100"
+                                           WidthRequest="100"/>
+                                <StackLayout VerticalOptions="Center">
                                     <Label Text="{Binding gamertag}" 
                                            TextColor="Default" 
                                            HorizontalTextAlignment="Start"

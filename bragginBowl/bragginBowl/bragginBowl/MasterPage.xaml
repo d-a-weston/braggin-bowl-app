@@ -14,12 +14,13 @@
                         <local:MasterPageItem Title="Players" TargetType="{x:Type local:PlayersPage}" />
                         <local:MasterPageItem Title="Tournaments" TargetType="{x:Type local:TournamentPage}" />
                         <local:MasterPageItem Title="Create Tournament" TargetType="{x:Type local:TournamentCreationPage}" />
+                        <local:MasterPageItem Title="Logout" TargetType="{x:Type local:PlayerLoginPage}" />
                     </x:Array>
                 </ListView.ItemsSource>
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
-                            <Grid Padding="5,10">
+                            <Grid Padding="5,10,5,1">
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="100"/>
                                     <ColumnDefinition Width="*" />
