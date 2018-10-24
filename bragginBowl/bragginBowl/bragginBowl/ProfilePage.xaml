@@ -5,79 +5,106 @@
              x:Class="bragginBowl.ProfilePage">
 
     <ContentPage.Content>
-        <StackLayout>
-            <ActivityIndicator VerticalOptions="Center" HorizontalOptions="Center" x:Name="activity_indicator" Color="#4D7EE1" />
-            <StackLayout Orientation="Vertical" Margin="5" HeightRequest="600">
+        <ScrollView>
+            <StackLayout>
+                <ActivityIndicator VerticalOptions="Center" HorizontalOptions="Center" x:Name="activity_indicator" Color="#4D7EE1" />
+                <StackLayout Orientation="Vertical" Margin="5" HeightRequest="450">
 
-                <StackLayout VerticalOptions="Center">
-                    <Image Source="profilepicture.png" 
+                    <StackLayout VerticalOptions="Center">
+                        <Image Source="profilepicture.png" 
                        HeightRequest="100"
                        WidthRequest="100"/>
-                    <Label x:Name="playerGamertag" TextColor="Default" 
+                        <Label x:Name="playerGamertag" TextColor="Default" 
                                            HorizontalTextAlignment="Center"
                                            FontSize="Large"
                                            FontAttributes="Bold" />
-                    <Label x:Name="playerName" TextColor="Default" 
+                        <Label x:Name="playerName" TextColor="Default" 
                                            HorizontalTextAlignment="Center"
                                            FontSize="Medium"
                                            FontAttributes="Bold" />
-                    <Label x:Name="playerTagline" TextColor="Default" 
+                        <Label x:Name="playerTagline" TextColor="Default" 
                                            HorizontalTextAlignment="Center"
                                            FontSize="Small"
                                            FontAttributes="Italic"/>
+                        <Button Text="Logout" Clicked="Logout" x:Name="LogoutButton"/>
 
-                    <Label Text="  " />
-                                     
-                    <Label Text="Win/Loss Ratio:    0.75  " 
+                        <Label Text="  " />
+
+                        <Label Text="Win/Loss Ratio:    0.75  " 
                                            HorizontalTextAlignment="Start"
                                            FontSize="Medium"
                                            FontAttributes="None"/>
-                    <Label Text="Match History:  " 
+                        <Label Text="  " />
+
+                        <Label Text="Match History:  " 
                                            HorizontalTextAlignment="Start"
                                            FontSize="Medium"
                                            FontAttributes="None"/>
-                    <Label Text="Mario Kart         Win            16/08/18"
+                        <Label Text="Mario Kart         Win            16/08/18"
                                            HorizontalTextAlignment="Start"
                                            FontSize="Small"
                                            FontAttributes="None"/>
-                    <Label Text="Mario Kart         Win            08/08/18"
+                        <Label Text="Mario Kart         Win            08/08/18"
                                            HorizontalTextAlignment="Start"
                                            FontSize="Small"
                                            FontAttributes="None"/>
-                    <Label Text="Mario Kart         Win            23/07/18"
+                        <Label Text="Mario Kart         Win            23/07/18"
                                            HorizontalTextAlignment="Start"
                                            FontSize="Small"
                                            FontAttributes="None"/>
-                    <Label Text="Mario Kart         Loss           03/07/18"
+                        <Label Text="Mario Kart         Loss           03/07/18"
                                            HorizontalTextAlignment="Start"
                                            FontSize="Small"
                                            FontAttributes="None"/>
 
+                        <Label Text="  " />
 
-                    <Button Text="Logout" Clicked="Logout" x:Name="LogoutButton"/>
-                </StackLayout>
-                <StackLayout>
+                    </StackLayout>
                     
+                 </StackLayout>
+                <StackLayout>
+                    <Label Text=" " /> 
                 </StackLayout>
+                <StackLayout VerticalOptions="Center">
+                    <Label Text="Upcoming Tournaments:  " 
+                                           HorizontalTextAlignment="Start"
+                                           FontSize="Medium"
+                                           FontAttributes="None"/>
+                </StackLayout>
+                <ListView x:Name="attendingInfo" HasUnevenRows="true" BackgroundColor="LightGray">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <StackLayout Orientation="Horizontal" Margin="5" HeightRequest="90">
+                                        
+                                    <StackLayout VerticalOptions="Center"
+                                                 BackgroundColor="LightGray">
+                                        
+                                        <Label Text="{Binding tournament_date}" TextColor="Default" 
+                                                HorizontalTextAlignment="Start"
+                                                FontSize="Small"
+                                                FontAttributes="None"
+                                               />
+                                        <Label Text="{Binding game}" TextColor="Default" 
+                                                HorizontalTextAlignment="Start"
+                                                FontSize="Small"
+                                                FontAttributes="None"
+                                               />
+                                    </StackLayout>
+                                    <StackLayout VerticalOptions="Center"
+                                                 BackgroundColor="LightGray">
+                                        <Label Text="{Binding score}" TextColor="Default" 
+                                                HorizontalTextAlignment="Start"
+                                                FontSize="Small"
+                                                FontAttributes="None"
+                                               />
+                                    </StackLayout>
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
             </StackLayout>
-            <ListView x:Name="attendingInfo" HasUnevenRows="true">
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <ViewCell>
-                            <StackLayout Orientation="Horizontal" Margin="5" HeightRequest="90">
-                                <StackLayout VerticalOptions="Center">
-                                    
-                                    <Label Text="{Binding tournament_date}" TextColor="#1C5AD8" />
-                                    <Label Text="{Binding game}" TextColor="#1C5AD8" />
-                                </StackLayout>
-                                <StackLayout VerticalOptions="Center">
-                                    <Label Text="{Binding score}" TextColor="#1C5AD8" />
-                                </StackLayout>
-                            </StackLayout>
-                        </ViewCell>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
-        </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

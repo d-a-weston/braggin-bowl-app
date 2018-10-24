@@ -6,7 +6,7 @@
              Title="MasterPage">
     
     <ContentPage.Content>
-        <StackLayout BackgroundColor="Yellow">
+        <StackLayout BackgroundColor="LightGray">
             <ListView x:Name="listView" x:FieldModifier="public">
                 <ListView.ItemsSource>
                     <x:Array Type="{x:Type local:MasterPageItem}">
