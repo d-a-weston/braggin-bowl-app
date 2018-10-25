@@ -21,7 +21,7 @@ namespace bragginBowl
 
         }
 
-        public async void GetRound() {
+        public void GetRound() {
             roundList.ItemsSource = new List<Round>() {
                 new Round() {
                     RoundNum = 1, IsComplete = "True", GamerTagsTeam1 = "Player1 Player2", GamerTagsTeam2 = "Player3 Player4", ScoreTeam1 = 500, ScoreTeam2 = 600,

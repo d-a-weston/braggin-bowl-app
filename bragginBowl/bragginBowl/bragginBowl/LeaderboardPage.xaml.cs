@@ -22,7 +22,7 @@ namespace bragginBowl
             GetLeaderboard();
 
         }
-        public async void GetLeaderboard() {
+        public void GetLeaderboard() {
             leaderboardList.ItemsSource = new List<Leaderboard>() {
                 new Leaderboard() {
                     Position = 1, Gamertag="player1", Score = 1000,
