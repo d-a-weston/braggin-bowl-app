@@ -43,7 +43,7 @@ namespace bragginBowl
                     string uri = "http://bearfoot.design:8080/api/player/login";
                     string responseBody = await client.GetStringAsync(uri);
 
-                    if (responseBody == "error")
+                    if (responseBody.Equals("\"error\""))
                     {
                         PasswordEntry.Text = "";
                         await DisplayAlert("Alert", "Username/Password Incorrect\nCase Sensitive!", "OK");
@@ -52,6 +52,7 @@ namespace bragginBowl
                     {
                         Player player = JsonConvert.DeserializeObject<Player>(responseBody);
                         Application.Current.Properties["Gamertag"] = player.gamertag;
+                        Application.Current.Properties["PlayerID"] = player.playerID;
                         await this.Navigation.PushAsync(new ProfilePage());
                         Navigation.RemovePage(this);
                     }

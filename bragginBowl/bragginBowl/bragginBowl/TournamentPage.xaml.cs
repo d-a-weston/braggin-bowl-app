@@ -37,6 +37,7 @@ namespace bragginBowl
                 ObservableCollection<Tournament> tournaments = new ObservableCollection<Tournament>(trn);
 
                 tournamentInfo.ItemsSource = tournaments;
+                tournamentInfo.ItemSelected += OnItemSelected;
 
                 activity_indicator.IsRunning = false;
                 activity_indicator.IsVisible = false;
@@ -51,9 +52,10 @@ namespace bragginBowl
             
         }
 
-        public async void ViewMore()
+        public async void OnItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
-            await this.Navigation.PushAsync(new TournamentDetails());
+            var item = (Tournament)e.SelectedItem;
+            await this.Navigation.PushAsync(new TournamentDetails(item.tournamentID));
         }
     }
 }

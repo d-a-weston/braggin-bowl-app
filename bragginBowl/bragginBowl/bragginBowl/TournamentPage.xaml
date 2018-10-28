@@ -22,7 +22,6 @@
                                     <Label Text="{Binding team_size}" TextColor="#1C5AD8" />
                                     <Label Text="{Binding tournament_type}" TextColor="#1C5AD8" />
                                     <Label Text="{Binding legal_tournament}" TextColor="#1C5AD8" />
-                                    <Button Text="View More" Clicked="ViewMore" TextColor="#1C5AD8" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
                                 </StackLayout>
                             </StackLayout>
                         </ViewCell>

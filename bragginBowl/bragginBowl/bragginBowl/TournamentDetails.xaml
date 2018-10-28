@@ -6,30 +6,47 @@
     <ContentPage.Content>
         <StackLayout>
             <ActivityIndicator VerticalOptions="Center" HorizontalOptions="Center" x:Name="activity_indicator"/>
-            <ListView x:Name="tournamentInfo" HasUnevenRows="true">
+            <StackLayout VerticalOptions="Center">
+                <Label x:Name="tournamentDate" TextColor="#1C5AD8" />
+                <Label x:Name="tournamentGame" TextColor="#1C5AD8" />
+                <Label x:Name="tournamentModifiers" TextColor="#1C5AD8" />
+                <Button Text="Leaderboard" Clicked="ViewLeaderboard" TextColor="#1C5AD8" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
+                <Button Text="View Round" Clicked="ViewRound" TextColor="#1C5AD8" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
+            </StackLayout>
+            <Label Text="Attendees" />
+            <ListView x:Name="playerInfo" HasUnevenRows="true">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
                             <!-- Here we make a Horizontal orientation with the help of StackLayout-->
-                          
-                            <StackLayout VerticalOptions="Center">
-                                <Label Text="{Binding tournament_date}" TextColor="#1C5AD8" />
-                                <Label Text="{Binding tournamentID}" TextColor="#1C5AD8" />
-                                <Label Text="{Binding game}" TextColor="#1C5AD8" />
-                                <Label Text="{Binding tournament_type}" TextColor="#1C5AD8" />
-                                <Label Text="{Binding legal_tournament}" TextColor="#1C5AD8" />
-                                <Label Text="{Binding team_num}" TextColor="#1C5AD8" />
-                                <Label Text="{Binding team_size}" TextColor="#1C5AD8" />
-                                <Label Text="{Binding modifiers}" TextColor="#1C5AD8" />
-                                <Label Text="{Binding current_round}" TextColor="#1C5AD8" />
-                                <Button Text="Leaderboard" Clicked="ViewLeaderboard" TextColor="#1C5AD8" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
-                                <Button Text="View Round" Clicked="ViewRound" TextColor="#1C5AD8" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
+                            <StackLayout Orientation="Horizontal" Margin="5" HeightRequest="90">
+                                <Image Source="profilepicture.png" 
+                                           HeightRequest="100"
+                                           WidthRequest="100"/>
+                                <StackLayout VerticalOptions="Center">
+                                    <Label Text="{Binding gamertag}" 
+                                           TextColor="Default" 
+                                           HorizontalTextAlignment="Start"
+                                           FontSize="Medium"
+                                           />
+                                    <Label Text="{Binding name}" 
+                                           TextColor="Default" 
+                                           HorizontalTextAlignment="Start"
+                                           FontSize="Medium"
+                                           />
+                                    <Label Text="{Binding tagline}" 
+                                           TextColor="Default" 
+                                           HorizontalTextAlignment="Start"
+                                           FontSize="Small"
+                                           FontAttributes="Italic"
+                                           />
+                                </StackLayout>
                             </StackLayout>
-                         
                         </ViewCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
+            <Button Text="Sign Up" Clicked="SignUp" x:Name="SignUpButton" TextColor="#1C5AD8" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
         </StackLayout>
     </ContentPage.Content>
 
