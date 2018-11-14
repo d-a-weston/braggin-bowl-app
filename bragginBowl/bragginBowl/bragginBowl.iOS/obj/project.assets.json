@@ -786,20 +786,20 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Bearfoot\\.nuget\\packages\\": {}
+    "C:\\Users\\jebus\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Bearfoot\\Documents\\iab330-braggin-bowl\\bragginBowl\\bragginBowl\\bragginBowl.iOS\\bragginBowl.iOS.csproj",
+      "projectUniqueName": "C:\\Users\\jebus\\Documents\\iab330-braggin-bowl\\bragginBowl\\bragginBowl\\bragginBowl.iOS\\bragginBowl.iOS.csproj",
       "projectName": "bragginBowl.iOS",
-      "projectPath": "C:\\Users\\Bearfoot\\Documents\\iab330-braggin-bowl\\bragginBowl\\bragginBowl\\bragginBowl.iOS\\bragginBowl.iOS.csproj",
-      "packagesPath": "C:\\Users\\Bearfoot\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Bearfoot\\Documents\\iab330-braggin-bowl\\bragginBowl\\bragginBowl\\bragginBowl.iOS\\obj\\",
+      "projectPath": "C:\\Users\\jebus\\Documents\\iab330-braggin-bowl\\bragginBowl\\bragginBowl\\bragginBowl.iOS\\bragginBowl.iOS.csproj",
+      "packagesPath": "C:\\Users\\jebus\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\jebus\\Documents\\iab330-braggin-bowl\\bragginBowl\\bragginBowl\\bragginBowl.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
-        "C:\\Users\\Bearfoot\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\jebus\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -812,8 +812,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "C:\\Users\\Bearfoot\\Documents\\iab330-braggin-bowl\\bragginBowl\\bragginBowl\\bragginBowl\\bragginBowl.csproj": {
-              "projectPath": "C:\\Users\\Bearfoot\\Documents\\iab330-braggin-bowl\\bragginBowl\\bragginBowl\\bragginBowl\\bragginBowl.csproj"
+            "C:\\Users\\jebus\\Documents\\iab330-braggin-bowl\\bragginBowl\\bragginBowl\\bragginBowl\\bragginBowl.csproj": {
+              "projectPath": "C:\\Users\\jebus\\Documents\\iab330-braggin-bowl\\bragginBowl\\bragginBowl\\bragginBowl\\bragginBowl.csproj"
             }
           }
         }

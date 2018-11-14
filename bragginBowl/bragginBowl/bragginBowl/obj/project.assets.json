@@ -381,23 +381,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Bearfoot\\.nuget\\packages\\": {},
+    "C:\\Users\\jebus\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Bearfoot\\Documents\\iab330-braggin-bowl\\bragginBowl\\bragginBowl\\bragginBowl\\bragginBowl.csproj",
+      "projectUniqueName": "C:\\Users\\jebus\\Documents\\iab330-braggin-bowl\\bragginBowl\\bragginBowl\\bragginBowl\\bragginBowl.csproj",
       "projectName": "bragginBowl",
-      "projectPath": "C:\\Users\\Bearfoot\\Documents\\iab330-braggin-bowl\\bragginBowl\\bragginBowl\\bragginBowl\\bragginBowl.csproj",
-      "packagesPath": "C:\\Users\\Bearfoot\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Bearfoot\\Documents\\iab330-braggin-bowl\\bragginBowl\\bragginBowl\\bragginBowl\\obj\\",
+      "projectPath": "C:\\Users\\jebus\\Documents\\iab330-braggin-bowl\\bragginBowl\\bragginBowl\\bragginBowl\\bragginBowl.csproj",
+      "packagesPath": "C:\\Users\\jebus\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\jebus\\Documents\\iab330-braggin-bowl\\bragginBowl\\bragginBowl\\bragginBowl\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Bearfoot\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\jebus\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
